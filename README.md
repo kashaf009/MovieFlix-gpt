@@ -1,16 +1,46 @@
-# React + Vite
+# 🍔 Swiggy Inspired Food Ordering App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and dynamic food ordering web application inspired by Swiggy, built using **React.js** and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+This project focuses on clean UI, scalable component architecture, and real-time dynamic restaurant data rendering based on different locations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+(Coming Soon)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Features
+
+- 🔥 Clean and professional UI design
+- ⚡ Fast and responsive layout (Mobile + Desktop)
+- 📍 Dynamic restaurant listing based on location
+- 🔎 Search and filter restaurants
+- 🛒 Add to cart functionality
+- 🧩 Reusable component-based architecture
+- 📦 Real-time data rendering (dynamic content)
+- 🎨 Modern styling using Tailwind CSS
+- ⚙️ Scalable folder structure
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React.js
+- **Styling:** Tailwind CSS
+- **Bundler:** vite
+- **Version Control:** Git & GitHub
+
+---
+
+## 🧠 Project Goals
+
+- Practice modern React development
+- Build real-world UI inspired by Swiggy
+- Understand dynamic data rendering
+- Implement scalable frontend architecture
+- Improve component reusability and state management
+
+---
