@@ -9,7 +9,7 @@ MovieFlix GPT allows users to browse trending movies, watch trailers, and get AI
 # 🚀 Live Demo
 
 🔗 Live Site: soon  
-🔗 GitHub Repo: ...
+🔗 GitHub Repo: https://github.com/kashaf009/MovieFlix-gpt
 
 ---
 
@@ -104,7 +104,7 @@ VITE_OPENAI_KEY=your_openai_api_key
 
 1. Clone the repository:
 
-git clone https://github.com/yourusername/movieflix-gpt.git
+git clone https://github.com/kashaf009/MovieFlix-gpt
 
 2. Navigate into the project:
 
