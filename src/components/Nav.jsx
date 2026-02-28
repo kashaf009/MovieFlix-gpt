@@ -24,9 +24,9 @@ const Nav = () => {
             <option  className="text-black font-semibold" value="">Hindi</option>
           </select>
           </div>
-          <button  className="bg-red-700 font-semibold rounded-md hover:bg-red-800 text-white px-3 py-1">
+          {/* <button  className="bg-red-700 font-semibold rounded-md hover:bg-red-800 text-white px-3 py-1">
             Sign in
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
