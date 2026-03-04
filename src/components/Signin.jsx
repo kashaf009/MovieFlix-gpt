@@ -1,5 +1,11 @@
 import React, { useState, useRef } from "react";
 import { checkFormValidation } from "../utils/FormValidate";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { auth } from "../utils/firebase";
+// import { log } from "firebase/firestore/pipelines";
 
 const Signin = () => {
   const [IsSigninForm, setIsSigninForm] = useState(true);
@@ -9,18 +15,59 @@ const Signin = () => {
   const password = useRef(null);
 
   const toggelForm = () => {
-    
     setIsSigninForm(!IsSigninForm);
   };
 
   const handleValidation = () => {
     // console.log(name?.current.value);
-   
-    const massage = checkFormValidation( (!IsSigninForm 
-      && name.current.value
-    ), email.current.value, password.current.value );
 
-    setErrorMassage(massage)
+    const massage = checkFormValidation(
+      // validate
+      !IsSigninForm && name.current.value,
+      email.current.value,
+      password.current.value,
+    );
+
+    setErrorMassage(massage);
+
+    if (massage) return;
+
+    // signup
+
+    if (!IsSigninForm) {
+      createUserWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value,
+      )
+        .then((userCredential) => {
+          // Signed up
+          const user = userCredential.user;
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMassage(errorCode + " " + errorMessage);
+        });
+    } else {
+      // signin
+      signInWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value,
+      )
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMassage(errorCode + " " + errorMessage);
+        });
+    }
   };
 
   return (
