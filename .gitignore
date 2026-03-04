@@ -24,4 +24,4 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw?
-firebase.js
+.env
