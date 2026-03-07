@@ -21,7 +21,7 @@ Built using **React (Vite), Tailwind CSS, Firebase Authentication, Redux Toolkit
 # 🌐 Live Demo
 
 🚀 **Live Application:**  
-      (updating soon)  
+     [ Preview ](https://movieflix-gpt-9931.web.app/) 
 
 📂 **GitHub Repository:**  
  https://github.com/kashaf009/MovieFlix-gpt
@@ -104,7 +104,7 @@ The application follows a **modular frontend architecture** with centralized sta
 
 # 📸 Application Preview
 
-(updating soon)
+[Preview](https://movieflix-gpt-9931.web.app/)
 
 ## 🔐 Authentication Interface
 - Secure user authentication
@@ -334,20 +334,79 @@ Tailwind CSS utility classes ensure consistent layout and performance.
 
 ---
 
-# 🚀 Deployment
+# 🚀 Deployment (Firebase Hosting)
 
-Build the production version:
+The application is deployed using **Firebase Hosting**.
+
+### 1️⃣ Install Firebase CLI
+
+```
+npm install -g firebase-tools
+```
+
+---
+
+### 2️⃣ Login to Firebase
+
+```
+firebase login
+```
+
+---
+
+### 3️⃣ Initialize Firebase in the Project
+
+```
+firebase init
+```
+
+Select:
+
+```
+Hosting
+```
+
+Set the build folder to:
+
+```
+dist
+```
+
+Choose:
+
+```
+Single Page App → Yes
+```
+
+---
+
+### 4️⃣ Build the Project
 
 ```
 npm run build
 ```
 
-Deploy using:
+This generates the **production-ready `dist` folder**.
 
-- **Vercel**
-- **Netlify**
-- **Firebase Hosting**
+---
 
+### 5️⃣ Deploy to Firebase
+
+```
+firebase deploy
+```
+
+---
+
+### 6️⃣ Live Application
+
+After deployment Firebase will generate a live URL like:
+
+```
+https://movieflix-gpt-9931.web.app/
+```
+
+Your **MovieFlix GPT app is now live 🚀**
 ---
 
 # 📈 Future Improvements
@@ -365,7 +424,7 @@ Planned enhancements include:
 
 # 👨‍💻 Author
 
-**Your Name**
+**Kashaf Khan**
 
 GitHub  
  https://github.com/kashaf009/MovieFlix-gpt
