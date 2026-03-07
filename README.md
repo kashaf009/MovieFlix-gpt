@@ -44,10 +44,67 @@ The goal of this project was to combine:
 It demonstrates skills in building **production-ready full-stack frontend applications** using modern industry tools.
 
 ---
+# 🏗 System Architecture
+
+The application follows a **modular frontend architecture** with centralized state management and external API integrations.
+
+```
+        ┌──────────────┐
+        │     User     │
+        └──────┬───────┘
+               │
+               ▼
+      ┌───────────────────┐
+      │   React Frontend  │
+      │  (Vite + Tailwind)│
+      └─────────┬─────────┘
+                │
+                ▼
+      ┌───────────────────┐
+      │   Authentication  │
+      │   Firebase Auth   │
+      └─────────┬─────────┘
+                │
+                ▼
+      ┌───────────────────┐
+      │   Redux Store     │
+      │ ┌───────────────┐ │
+      │ │  userSlice    │ │
+      │ │  movieSlice   │ │
+      │ │  gptSlice     │ │
+      │ └───────────────┘ │
+      └─────────┬─────────┘
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+ ┌───────────────┐  ┌───────────────┐
+ │   TMDB API    │  │   OpenAI API  │
+ │ Movie Data    │  │ AI Suggestions│
+ └───────────────┘  └───────────────┘
+                │
+                ▼
+      ┌───────────────────┐
+      │  MovieFlix GPT UI │
+      │  Dynamic Movies   │
+      │  & AI Suggestions │
+      └───────────────────┘
+```
+
+### Architecture Highlights
+
+- **React + Vite** powers a fast and modern frontend experience.
+- **Tailwind CSS** provides utility-first styling for responsive UI.
+- **Firebase Authentication** handles secure user login and signup.
+- **Redux Toolkit** manages global application state.
+- **TMDB API** provides real-time movie data and trailers.
+- **OpenAI API** generates intelligent movie recommendations.
+- The architecture ensures **separation of concerns and scalable component structure**.
+
+---
 
 # 📸 Application Preview
 
-(soon)
+(updating soon)
 
 ## 🔐 Authentication Interface
 - Secure user authentication
