@@ -6,12 +6,11 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { adduser } from "../utils/userSlice";
+import { photoURL } from "../utils/constant";
 
 const Signin = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const [IsSigninForm, setIsSigninForm] = useState(true);
@@ -46,8 +45,7 @@ const Signin = () => {
         .then((userCredential) => {
           updateProfile(auth.currentUser, {
             displayName: name.current.value,
-            photoURL:
-              "https://i.pinimg.com/474x/5b/50/e7/5b50e75d07c726d36f397f6359098f58.jpg",
+            photoURL: photoURL,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
