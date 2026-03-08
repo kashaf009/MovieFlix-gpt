@@ -20,21 +20,24 @@ const Nav = () => {
 
         dispatch(adduser({ uid, email, displayName, photoURL }));
 
+        navigate("/browse")
+
         // ...
       } else {
         dispatch(removeUser());
+        navigate("/")
         // User is signed out
         // ...
       }
     });
-  }, [dispatch]);
+  }, []);
 
   console.log(user);
 
   const handleSignOut = () => {
     signOut(auth)
       .then(() => {
-        navigate("/");
+        // navigate("/");
         // Sign-out successful.
       })
       .catch((error) => {

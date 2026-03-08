@@ -61,7 +61,7 @@ const Signin = () => {
                 }),
               );
 
-              navigate("/browse");
+              // navigate("/browse");
             })
             .catch((error) => {
               setErrorMessage(error.message);
@@ -79,7 +79,7 @@ const Signin = () => {
         password.current.value,
       )
         .then(() => {
-          navigate("/browse");
+          // navigate("/browse");
         })
         .catch((error) => {
           setErrorMessage(error.code + " " + error.message);
