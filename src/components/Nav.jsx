@@ -32,7 +32,7 @@ const Nav = () => {
     });
   }, []);
 
-  console.log(user);
+  // console.log(user);
 
   const handleSignOut = () => {
     signOut(auth)

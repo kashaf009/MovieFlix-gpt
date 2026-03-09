@@ -1,12 +1,14 @@
-import React from 'react'
-import Nav from './Nav'
+import Nav from "./Nav";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 
 const Browse = () => {
+  useNowPlayingMovies();
+
   return (
     <div>
-      <Nav/>
+      <Nav />
     </div>
-  )
-}
+  );
+};
 
-export default Browse
+export default Browse;
