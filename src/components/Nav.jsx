@@ -47,7 +47,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="absolute w-full z-20 py-2  h-35 bg-linear-to-b from-black  ">
+    <div className="absolute w-full z-20 py-2  h-30 bg-linear-to-b from-black  ">
       <div className="w-[80%] flex mx-auto items-center justify-between ">
         <div>
           <img
