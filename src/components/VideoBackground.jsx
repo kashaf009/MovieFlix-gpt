@@ -1,16 +1,24 @@
 import React from "react";
-import { API_OPTION } from "../utils/constant";
+import useTrailerVideo from "../hooks/useTrailerVideo";
+import { useSelector } from "react-redux";
 
 const VideoBackground = ({ id }) => {
-  const movieID = id;
-  const url = `https://api.themoviedb.org/3/movie/${movieID}/videos?language=en-US`;
-  const getMovieVideo = async () => {
-    const viddata = await fetch(url, API_OPTION);
+  const trailerKey = useSelector((store)=> store?.movies?.TrailerVideo);
+  useTrailerVideo(id);
 
-    const dataJSON = await viddata.json();
-  };
-
-  return <div>Video</div>;
+  return (
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src={`https://www.youtube.com/embed/${trailerKey}`}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
 };
 
 export default VideoBackground;
