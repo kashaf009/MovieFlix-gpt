@@ -9,9 +9,9 @@ const VideoBackground = ({ id }) => {
   return (
     <div className="w-screen h-screen overflow-hidden">
       <iframe
-      className="w-full -translate-y-27  scale-131 aspect-video"
+      className="w-full -translate-y-1 scale-130 h-screen pointer-events-none"
         
-        src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1&controls=0&disablekb=1&mute=1&controls=0&modestbranding=&rel=0&showinfo=0&loop=1&playlist=${trailerKey}`}
+        src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1&controls=0&disablekb=1&mute=1&modestbranding=0&rel=0&showinfo=0&loop=1&playlist=${trailerKey}`}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture;"
         referrerPolicy="strict-origin-when-cross-origin"
