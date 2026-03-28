@@ -11,13 +11,18 @@ const useTrailerVideo = (id) => {
     const viddata = await fetch(url, API_OPTION);
 
     const dataJSON = await viddata.json();
-    const trailer = dataJSON?.results?.filter(
-      (item) => item.type === "Trailer",
-    );
-    console.log(trailer);
+    console.log(dataJSON.results);
+    const trailer = dataJSON?.results?.find(
+  (item) =>
+    item.type === "Trailer" &&
+    item.site === "YouTube"
+);
 
-    dispatch(addTrailerVideo(trailer[0]?.key))
-    
+const key = trailer ? trailer.key : dataJSON?.results?.[0]?.key;
+
+dispatch(addTrailerVideo(key));
+console.log(trailer);
+
   };
 
   useEffect(() => {

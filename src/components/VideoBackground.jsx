@@ -5,6 +5,8 @@ import { useSelector } from "react-redux";
 const VideoBackground = ({ id }) => {
   const trailerKey = useSelector((store)=> store?.movies?.TrailerVideo);
   useTrailerVideo(id);
+  console.log(trailerKey);
+  
 
   return (
     <div className="w-screen h-screen overflow-hidden">
