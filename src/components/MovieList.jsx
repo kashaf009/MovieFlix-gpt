@@ -2,6 +2,7 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 const MovieList = ({ title, movies }) => {
+  if (!movies) return null;
   return (
     <div className="overflow-hidden ">
       <h3 className="mb-4 mt-3 text-xl font-semibold text-white">{title}</h3> 
