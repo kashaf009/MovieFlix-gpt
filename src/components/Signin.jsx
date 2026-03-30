@@ -89,7 +89,7 @@ const Signin = () => {
     <div>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="flex flex-col w-1/4 my-40 mx-auto gap-5 right-0 left-0 absolute p-15 bg-black opacity-87 rounded-xl"
+        className="flex flex-col w-[80%] md:w-1/4 my-40 mx-auto gap-5 right-0 left-0 absolute p-10 md:p-15 bg-black opacity-85 rounded-xl"
       >
         <h3 className="text-white font-semibold text-2xl mb-2">
           {IsSigninForm ? "Sign in" : "Sign up"}

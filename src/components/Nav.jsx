@@ -48,19 +48,18 @@ const Nav = () => {
 
   return (
     <div className="absolute w-full z-20 py-2  h-30 bg-linear-to-b from-black opacity-90 ">
-      <div className="w-[80%] flex mx-auto items-center justify-between ">
+      <div className="w-[90%] md:w-[80%] flex mx-auto items-center justify-between">
         <div>
           <img
-            className="w-45 "
-            // src="https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2026-02-12/consent/87b6a5c0-0104-4e96-a291-092c11350111/019ae4b5-d8fb-7693-90ba-7a61d24a8837/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
-            // alt=""
+            className="ml-5 md:ml-0 w-30 md:w-45 "
+           
             src="img/movieflix.png"
           />
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex md:items-center gap-3">
           {!user && (
-            <div className="border items-center flex gap-1 border-white text-white px-3 py-1 rounded-md">
+            <div className="opacity-0 md:opacity-100 border md:items-center flex gap-1 border-white text-white px-3 py-1 rounded-md">
               <svg
                 viewBox="0 0 16 16"
                 width="16"
@@ -71,6 +70,7 @@ const Nav = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 role="img"
+                className="hidden md:inline-block"
               >
                 <path
                   fill="currentColor"
@@ -79,8 +79,10 @@ const Nav = () => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
+              <div className="flex justify-end w-full">
+
               <select
-                className="w-full outline-none font-semibold "
+                className="hidden md:inline-block right-50 md:w-full items-end outline-none font-semibold "
                 id="langauge"
               >
                 <option className="text-black font-semibold " value="english">
@@ -90,24 +92,25 @@ const Nav = () => {
                   Hindi
                 </option>
               </select>
+              </div>
             </div>
           )}
 
           {user && (
-            <div className="flex flex-col items-center gap-1 pt-2">
+            <div className="  flex flex-col items-center gap-1 pt-2">
               <img
-                className="h-8 w-8 rounded-xl mb-0 "
+                className="hidden md:inline-block h-8 w-8 rounded-xl mb-0 "
                 src={user?.photoURL}
                 alt="profile"
               />
-              <p className="text-white font-semibold uppercase bg-red-700 px-2 rounded-3xl text-[10px]">{user?.displayName}</p>
+              <p className="text-white hidden md:inline-block font-semibold uppercase bg-red-700 px-2 rounded-3xl text-[10px]">{user?.displayName}</p>
             </div>
           )}
 
           {user && (
             <button
               onClick={handleSignOut}
-              className="bg-red-700 font-semibold rounded-md hover:bg-red-800 text-white px-3 py-1"
+              className="bg-red-700 font-semibold rounded-md hover:bg-red-800 text-white md:px-3 md:py-1 mr-5 md:mr-0 px-2 py-0.5 text-sm"
             >
               Sign out
             </button>

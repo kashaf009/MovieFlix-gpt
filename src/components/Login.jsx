@@ -31,13 +31,13 @@ import Signin from "./Signin";
 
 const Login = () => {
   return (
-    <div className="relative h-[120vh] w-full">
+    <div className="fixed  h-[120vh] w-full">
 
       {/* Background Image */}
       <img
         src="/img/home-img.png"
         alt="background"
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-screen object-cover"
       />
 
       {/* Netflix Style Dark Gradient */}

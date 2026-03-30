@@ -11,8 +11,8 @@ const SecoundryContainer = () => {
     
 
   return (
-    <div className='pl-20 bg-black' >
-      <section className='-mt-50 z-30 relative'>
+    <div className='pl-8 md:pl-20 bg-black' >
+      <section className='-mt-80 md:-mt-50 z-30 relative'>
 
       <MovieList title={"Now playing"} movies={movies?.nowPlayingMovie}/>
       <MovieList title={"Popular"} movies={movies?.popularMovie}/>
