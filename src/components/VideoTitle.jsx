@@ -7,7 +7,7 @@ const VideoTitle = ({title,overview}) => {
       <p className="hidden md:inline-block md:w-full text-lg">{overview}</p>
       <div className="flex gap-2 md:gap-4 mt-8">
 
-      <button className="bg-gray-700 px-3 py-2 md:px-6 md:py-1.5 hover:bg-gray-900 text-lg text-white rounded-md font-semibold">▶︎ Play</button>
+      <button className="bg-gray-700 px-3 py-1 md:px-6 md:py-1.5 hover:bg-gray-900 text-lg text-white rounded-md font-semibold">▶︎ Play</button>
       <button className="bg-gray-700 hidden md:inline-block md:px-6 md:py-1.5  hover:bg-gray-900  text-lg text-white rounded-md font-semibold">ⓘ More info</button>
       </div>
     </div>
