@@ -9,7 +9,7 @@ const MovieList = ({ title, movies }) => {
       <section className="overflow-x-scroll">
         <div className="flex gap-2 w-450 md:w-600">
           {movies.map((movie) => (
-            <MovieCard key={movie.id} movie={movie} />
+            <MovieCard  key={movie.id} movie={movie} />
           ))}
         </div>
       </section>
