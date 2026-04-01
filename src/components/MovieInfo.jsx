@@ -10,7 +10,7 @@ const MovieInfo = () => {
         const url = `https://api.themoviedb.org/3/movie/${id}?language=en-US`;
         const data = await fetch(url, API_OPTION);
         const JSON = await data.json();
-        // console.log(JSON);
+        console.log(JSON);
         setMovieInfo(JSON);
     }
 
@@ -28,8 +28,25 @@ const MovieInfo = () => {
     
     
   return (
-    <div>
-        <h1 className='text-3xl pt-3 pl-5 font-bold text-black'>{movieInfo?.title} </h1>
+    <div className='bg-black h-screen grid grid-cols-[40%_60%] fixed'>
+        <section className=''>
+
+
+        <img className='p-8 w-full h-[98%] mt-2 object-cover' src={`https://image.tmdb.org/t/p/original/${movieInfo?.poster_path}`} alt="" />
+
+
+
+        </section >
+
+        <section className='pl-8'>
+        <h1 className='text-4xl mt-25 font-bold text-white'>{movieInfo?.title}</h1>
+
+            <p className='text-white text-2xl leading-normal pr-15 mt-10'>{movieInfo?.overview}</p>
+
+            <p className='text-white text-xl mt-8'>Duration : {movieInfo?.runtime} minutes</p>
+            <p className='text-white text-xl pt-7'>Release Date :{movieInfo?.release_date}</p>
+
+        </section>
 
     </div>
   )
