@@ -45,6 +45,7 @@ const MovieInfo = () => {
 
             <p className='text-white text-xl mt-8'>Duration : {movieInfo?.runtime} minutes</p>
             <p className='text-white text-xl pt-7'>Release Date :{movieInfo?.release_date}</p>
+           
 
         </section>
 
