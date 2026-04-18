@@ -23,7 +23,6 @@ Built using **React (Vite), Tailwind CSS, Firebase Authentication, Redux Toolkit
 <p align="center">
   <img src="./src/assets/homepage.gif" alt="App Demo" width="700"/>
 </p>
-> Click the image above to watch the application demo
 
 ---
 
@@ -87,7 +86,7 @@ The application follows a **modular frontend architecture** with centralized sta
       │ ┌───────────────┐ │
       │ │  userSlice    │ │
       │ │  movieSlice   │ │
-      │ │               │
+      │ │               │ |
       │ └───────────────┘ │
       └─────────┬─────────┘
                 │
@@ -98,7 +97,7 @@ The application follows a **modular frontend architecture** with centralized sta
          │ Movie Data    │  
          └───────────────┘  
                 │
-               ▼
+                ▼
       ┌───────────────────┐
       │  MovieFlix UI     │
       │  Dynamic Movies   │
