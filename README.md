@@ -1,49 +1,62 @@
+
 ![React](https://img.shields.io/badge/React-18-blue)
 ![Vite](https://img.shields.io/badge/Vite-BuildTool-purple)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-38B2AC)
 ![Firebase](https://img.shields.io/badge/Firebase-Auth-orange)
 ![Redux](https://img.shields.io/badge/Redux-StateManagement-764ABC)
-![OpenAI](https://img.shields.io/badge/OpenAI-AI%20Integration-black)
 ![TMDB](https://img.shields.io/badge/TMDB-Movie%20API-01B4E4)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-# 🎬 MovieFlix GPT
+# 🎬 MovieFlix
 
-**MovieFlix GPT** is a modern AI-powered movie discovery platform inspired by Netflix.  
-It allows users to browse trending movies, watch trailers, and receive **AI-generated movie recommendations** using natural language prompts.
+**MovieFlix** is a modern movie discovery platform inspired by Netflix.  
+It allows users to browse trending movies, watch trailers, and explore content with a smooth and responsive UI.
 
-The application integrates **TMDB for movie data** and **OpenAI for intelligent recommendations**, providing a seamless and interactive movie exploration experience.
-
-Built using **React (Vite), Tailwind CSS, Firebase Authentication, Redux Toolkit, TMDB API, and OpenAI API**.
+Built using **React (Vite), Tailwind CSS, Firebase Authentication, Redux Toolkit, and TMDB API**.
 
 ---
 
-# 🌐 Live Demo
+## 🎥 Demo Video
 
-🚀 **Live Application:**  
-     [ Preview ](https://movieflix-gpt-9931.web.app/) 
+[![Watch Demo](./src/assets/thumbnail.png)](./src/assets/homepage.mp4)
 
-📂 **GitHub Repository:**  
- https://github.com/kashaf009/MovieFlix-gpt
-
-
+> Click the image above to watch the application demo
 
 ---
 
-# 💡 Why I Built MovieFlix GPT
+## 📸 Screenshots
 
-I built MovieFlix GPT to explore the integration of AI-powered recommendations into modern web applications.
+### 🔐 Login Page
+![Login](./src/assets/login.png)
 
-The goal of this project was to combine:
-
-- Real-world API integration
-- AI-powered user experiences
-- Scalable React architecture
-- Modern frontend tooling
-
-It demonstrates skills in building **production-ready full-stack frontend applications** using modern industry tools.
+### 🎥 Home Page
+![Home](./src/assets/thumbnail.png)
 
 ---
+
+## ✨ Features
+
+- 🔍 Browse trending and popular movies  
+- 🎬 Watch trailers inside the app  
+- 🔐 Secure authentication with Firebase  
+- ⚡ Fast and responsive UI  
+- 🎨 Clean Netflix-style design  
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛️ React (Vite)  
+- 🎨 Tailwind CSS  
+- 🔥 Firebase Authentication  
+- 📦 Redux Toolkit  
+- 🌐 TMDB API  
+- 🔀 React Router DOM  
+
+---
+
+## 📂 Project Structure
+
 # 🏗 System Architecture
 
 The application follows a **modular frontend architecture** with centralized state management and external API integrations.
@@ -71,22 +84,22 @@ The application follows a **modular frontend architecture** with centralized sta
       │ ┌───────────────┐ │
       │ │  userSlice    │ │
       │ │  movieSlice   │ │
-      │ │  gptSlice     │ │
+      │ │               │
       │ └───────────────┘ │
       └─────────┬─────────┘
                 │
-        ┌───────┴────────┐
-        ▼                ▼
- ┌───────────────┐  ┌───────────────┐
- │   TMDB API    │  │   OpenAI API  │
- │ Movie Data    │  │ AI Suggestions│
- └───────────────┘  └───────────────┘
+                |
+                ▼        
+         ┌───────────────┐  
+         │   TMDB API    │  
+         │ Movie Data    │  
+         └───────────────┘  
                 │
-                ▼
+               ▼
       ┌───────────────────┐
-      │  MovieFlix GPT UI │
+      │  MovieFlix UI     │
       │  Dynamic Movies   │
-      │  & AI Suggestions │
+      │                   │
       └───────────────────┘
 ```
 
@@ -125,16 +138,7 @@ The application follows a **modular frontend architecture** with centralized sta
 
 ---
 
-## 🤖 AI Movie Search (MovieFlix GPT)
 
-- AI-powered movie recommendation engine
-- GPT search interface
-- Dynamic movie suggestion grid
-- TMDB data integration
-
-
-
----
 
 # ✨ Key Features
 
@@ -169,32 +173,6 @@ The application follows a **modular frontend architecture** with centralized sta
 
 ---
 
-## 🤖 AI Movie Recommendation Engine
-
-The **MovieFlix GPT** feature allows users to search movies using natural language.
-
-Example queries:
-
-- *"Suggest some sci-fi movies like Interstellar"*
-- *"Best comedy movies from the 2000s"*
-
-### Workflow
-
-1. User enters prompt
-2. OpenAI processes the query
-3. AI returns movie suggestions
-4. TMDB API fetches actual movie data
-5. Results render in reusable MovieList components
-
----
-
-## 🌍 Multi-Language Support
-
-- Language constants configuration
-- Dynamic UI text switching
-- Easily extendable for additional languages
-
----
 
 # 🛠 Tech Stack
 
@@ -205,15 +183,11 @@ Example queries:
 | State Management | Redux Toolkit |
 | Authentication | Firebase |
 | Movie Data | TMDB API |
-| AI Recommendations | OpenAI API |
 | Routing | React Router DOM |
-| Deployment | Vercel / Netlify / Firebase Hosting |
+| Deployment | Firebase Hosting |
 
 ---
 
-# 🏗 Project Architecture
-
-(updating soon)
 
 # ⚙️ Environment Variables
 
@@ -290,16 +264,6 @@ Images are optimized using **TMDB CDN URLs**.
 
 ---
 
-# 🤖 OpenAI Integration
-
-The AI search feature works as follows:
-
-1. User submits a natural language query
-2. OpenAI generates movie suggestions
-3. Suggested titles are matched with TMDB data
-4. Results are displayed using reusable components
-
----
 
 # 🧠 State Management
 
@@ -315,10 +279,6 @@ Redux Toolkit manages application state.
 - Now Playing Movies
 - Popular Movies
 - Trailer videos
-
-**gptSlice**
-- GPT search query
-- AI movie suggestions
 
 ---
 
@@ -398,29 +358,6 @@ firebase deploy
 
 ---
 
-### 6️⃣ Live Application
-
-After deployment Firebase will generate a live URL like:
-
-```
-https://movieflix-gpt-9931.web.app/
-```
-
-Your **MovieFlix GPT app is now live 🚀**
----
-
-# 📈 Future Improvements
-
-Planned enhancements include:
-
-- Watchlist feature
-- Movie detail pages
-- Ratings & reviews
-- Dark / Light mode
-- Improved GPT prompt engineering
-- Personalized recommendations
-
----
 
 # 👨‍💻 Author
 
