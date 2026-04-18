@@ -18,8 +18,11 @@ Built using **React (Vite), Tailwind CSS, Firebase Authentication, Redux Toolkit
 
 ## 🎥 Demo Video
 
-[![Watch Demo](./src/assets/thumbnail.png)](./src/assets/homepage.mp4)
+## 🎥 App Preview
 
+<p align="center">
+  <img src="./src/assets/homepage.gif" alt="App Demo" width="700"/>
+</p>
 > Click the image above to watch the application demo
 
 ---
